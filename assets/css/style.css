@@ -40,18 +40,38 @@ ul {
   display: none;
 }
 
+.nav-logo > a {
+  background-color: #f42;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  display: block;
+  padding: 16px 20px;
+  width: 106px;
+  height: 80px;
+  position: relative;
+  z-index: 2;
+}
+
 .nav-tnw {
   background: #131313;
   font-size: 13px;
   font-weight: 500;
   line-height: 32px;
   max-height: 32px;
-  position: relative;
   z-index: 2;
   list-style: none;
   margin: 0;
   padding-left: 10px;
   display: flex;
+}
+
+.nav-outer {
+  display: flex;
+}
+
+.nav-cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .nav-tnw li {
@@ -75,11 +95,13 @@ ul {
 
 .nav-sections {
   display: flex;
+  align-items: center;
   padding-left: 20px;
 }
 
 .nav-sections li {
-  margin-right: 12px;
+  margin-right: 10px;
+  text-align: center;
 }
 
 .nav-sections a {
@@ -90,6 +112,13 @@ ul {
   letter-spacing: 0.04em;
 }
 
+@media (max-width: 1213px) and (min-width: 740px) {
+  li.nav-sections-section:nth-child(6),
+  li.nav-sections-section:nth-child(7) {
+    display: none;
+  }
+}
+
 .nav-countdown {
   display: flex;
   align-items: center;
@@ -98,7 +127,7 @@ ul {
 }
 
 .nav-countdown-conf-ams17 {
-  width: 450px;
+  width: 440px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -118,6 +147,10 @@ ul {
 
 .nav-icons {
   margin: 0 15px;
+}
+
+.nav-mob-toggle {
+  display: none;
 }
 
 .nav-countdown-conf-ams17-text {
@@ -165,6 +198,51 @@ ul {
   color: #000;
   font-size: 13px;
   padding: 8px 20px;
+}
+
+@media (max-width: 1024px) {
+  .nav-countdown-conf-ams17 img,
+  .nav-countdown-conf-ams17-text,
+  .nav-countdown-conf-ams17 a.btn {
+    display: none;
+  }
+  .nav-countdown-conf-ams17 {
+    width: unset;
+  }
+  .nav-logo {
+    display: block;
+  }
+  .nav-logo img {
+    display: block;
+    height: 16px;
+    position: relative;
+    width: 66px;
+    z-index: 999;
+    transform: translateY(16px);
+  }
+  .nav-message {
+    padding-left: 126px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-tnw,
+  .nav-sections {
+    display: none;
+  }
+  .u-clear {
+    justify-content: flex-end;
+  }
+  .nav-logo > a {
+    height: 48px;
+  }
+  .nav-logo img {
+    transform: unset;
+  }
+  .nav-message {
+    padding-left: 0px;
+    text-align: center;
+  }
 }
 
 .cover {
@@ -315,4 +393,38 @@ article:first-child h2 {
   top: 20px;
   pointer-events: none;
   text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .cover-logo,
+  .cover-gradient {
+    display: none;
+  }
+  .cover {
+    max-height: 60vh;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  article:first-child h2 {
+    font-size: 40px;
+  }
+  .cover-date {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover {
+    min-height: 90vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+  }
+  .cover-story:first-child {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  article:first-child h2 {
+    font-size: 20px;
+  }
 }
