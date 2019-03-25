@@ -1,0 +1,168 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  display: block;
+  background: transparent
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
+    no-repeat;
+  background-size: 1296px 1296px;
+  background-position: 1296px 1296px;
+  width: 16px;
+  height: 16px;
+}
+
+.nav-logo {
+  display: none;
+}
+
+.nav-tnw {
+  background: #131313;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 32px;
+  max-height: 32px;
+  position: relative;
+  z-index: 2;
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+  display: flex;
+}
+
+.nav-tnw li {
+  margin-left: 12px;
+}
+
+.nav-tnw a {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.nav-tnw a.active {
+  color: #fff;
+}
+
+.u-clear {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.nav-sections {
+  display: flex;
+  padding-left: 20px;
+}
+
+.nav-sections li {
+  margin-right: 12px;
+}
+
+.nav-sections a {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #aaa;
+  letter-spacing: 0.04em;
+}
+
+.nav-countdown {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-left: 1px solid #eee;
+}
+
+.nav-countdown-conf-ams17 {
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-countdown-conf-ams17 img {
+  display: inline-block;
+  width: 125px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.icon--search--dark {
+  background-position: -848px -848px;
+  opacity: 0.25;
+}
+
+.nav-icons {
+  margin: 0 15px;
+}
+
+.nav-countdown-conf-ams17-text {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.nav-countdown-conf-ams17-timer {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #f42;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-countdown-conf-ams17-timer-count {
+  font-size: 22px;
+}
+
+.nav-countdown-conf-ams17-item {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.nav-countdown-conf-ams17 a.btn {
+  display: inline-block;
+  background-color: #0cc;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 3px;
+  line-height: 28px;
+  padding: 0 12px;
+  font-size: 11px;
+}
+
+.nav-message {
+  height: 30px;
+  background: #fd3;
+  color: #000;
+  font-size: 13px;
+  padding: 8px 20px;
+}
