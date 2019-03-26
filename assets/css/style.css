@@ -123,7 +123,6 @@ ul {
   display: flex;
   align-items: center;
   height: 100%;
-  border-left: 1px solid #eee;
 }
 
 .nav-countdown-conf-ams17 {
@@ -147,10 +146,37 @@ ul {
 
 .nav-icons {
   margin: 0 15px;
+  display: flex;
+  align-items: center;
 }
 
-.nav-mob-toggle {
-  display: none;
+.nav-icons li > a {
+  display: block;
+  height: 48px;
+  padding: 16px;
+  width: 48px;
+  position: relative;
+  z-index: 998;
+  border-left: 1px solid #eee;
+}
+
+.nav-mob-toggle span {
+  background-color: #f42;
+  display: block;
+  height: 2px;
+  left: 14px;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+}
+
+.nav-mob-toggle span:first-child {
+  transform: translateY(-6px);
+}
+
+.nav-mob-toggle span:last-child {
+  transform: translateY(6px);
 }
 
 .nav-countdown-conf-ams17-text {
@@ -198,6 +224,9 @@ ul {
   color: #000;
   font-size: 13px;
   padding: 8px 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media (max-width: 1024px) {
@@ -242,6 +271,15 @@ ul {
   .nav-message {
     padding-left: 0px;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-message {
+    font-size: 10px;
+  }
+  .nav-countdown-conf-ams17-timer {
+    display: none;
   }
 }
 
