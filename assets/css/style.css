@@ -28,8 +28,8 @@ ul {
 .icon {
   display: block;
   background: transparent
-    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
-    no-repeat;
+              url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
+              no-repeat;
   background-size: 1296px 1296px;
   background-position: 1296px 1296px;
   width: 16px;
@@ -205,8 +205,7 @@ ul {
 }
 
 .nav-countdown-conf-ams17-item {
-  margin-left: 2px;
-  margin-right: 2px;
+  margin: 0 2px;
 }
 
 .nav-countdown-conf-ams17 a.btn {
@@ -896,8 +895,7 @@ h2 {
 
 .deals-header-more:after {
   content: '|';
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
   display: none;
   pointer-events: none;
   position: absolute;
